@@ -23,7 +23,7 @@
                     </g>
                 </svg>
             </div>
-            <div class="sidebar flex justify-end pr-5">
+            <div class="sidebar flex flex-col items-end pr-5">
                 <ul class="flex flex-col text-2xl space-y-3 px-11 font-bold">
                     <li
                         class="flex justify-start items-center gap-3 w-full border border-transparent rounded-full hover:bg-gray-900 hover:border-gray-700 hover:cursor-pointer transition-colors px-5 py-3">
@@ -65,7 +65,14 @@
                         class="flex justify-start items-center gap-3 w-full border border-transparent rounded-full hover:bg-gray-900 hover:border-gray-700 hover:cursor-pointer transition-colors px-5 py-3">
                         <span class="material-symbols-outlined text-5xl flex-shrink-0">pending</span>More
                     </li>
+                    <li>
+                        <div class="more p-3">
+                            <button
+                                class="bg-[#1d9bf0] px-10 text-2xl rounded-full mr-28 p-3 text-white cursor-pointer hover:bg-[#35a6f2]">Post</button>
+                        </div>
+                    </li>
                 </ul>
+
             </div>
         </div>
         <div class="second w-full border-[1px] border-x-white border-y-black ">
@@ -82,25 +89,62 @@
             <div class="whatishapp flex my-3">
                 <div class="img m-3">
                     <img src="https://pbs.twimg.com/profile_images/1940783537872867328/jPBzd5bK_normal.jpg" alt=""
-                        class="w-12 h-10 rounded-full object-cover">
+                        class="w-10 h-9 rounded-full object-cover">
                 </div>
                 <div class="w-full">
                     <input class="bg-black text-white w-full h-7 my-2 outline-none text-xl" type="text"
-                    placeholder="What is happening?">
-                    <div class="text-[#1d9bf0] flex items-center gap-1 w-full my-4">
-                        <span class="material-symbols-outlined ">
+                        placeholder="What is happening?">
+                    <div class="text-[#1d9bf0] flex items-center gap-1 w-full my-4 cursor-pointer hover:text-[#61b5ed]">
+                        <span class="material-symbols-outlined">
                             globe_asia
                         </span>
                         <span class="font-bold">Everyone can reply</span>
-                        
+
                     </div>
                     <div class="w-[90%] h-[0.2px] bg-gray-400 my-3"></div>
+                    <div class="blueicons flex gap-2 text-[#1d9bf0]">
+                        <span class="material-symbols-outlined cursor-pointer hover:text-[#61b5ed]">
+                            image
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer hover:text-[#61b5ed]">
+                            gif_box
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer hover:text-[#61b5ed]">
+                            Massage
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer hover:text-[#61b5ed]">
+                            ballot
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer hover:text-[#61b5ed]">
+                            mood
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer hover:text-[#61b5ed]">
+                            calendar_clock
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer hover:text-[#61b5ed]">
+                            location_on
+                        </span>
+                    </div>
                 </div>
             </div>
             <hr>
 
-               
 
+            <div class="posts">
+                <div class="post flex m-4 gap-2.5">
+                    <div class="image">
+                        <img class="w-13 h-9 rounded-full object-cover"
+                            src="https://pbs.twimg.com/profile_images/1940783537872867328/jPBzd5bK_normal.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <span>Fernando Cao @thefernandocz · 23h</span>
+                        <div>It's the ex-CEO of Twitter that Musk fired.</div>
+                        <div class="postimg">
+                            <img src="https://pbs.twimg.com/media/Gy4dGWHbEAAP2v4?format=jpg&name=small" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 

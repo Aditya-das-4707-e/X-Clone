@@ -219,11 +219,11 @@
   .m-3 {
     margin: calc(var(--spacing) * 3);
   }
+  .m-4 {
+    margin: calc(var(--spacing) * 4);
+  }
   .m-auto {
     margin: auto;
-  }
-  .mx-5 {
-    margin-inline: calc(var(--spacing) * 5);
   }
   .mx-auto {
     margin-inline: auto;
@@ -237,11 +237,38 @@
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
-  .my-5 {
-    margin-block: calc(var(--spacing) * 5);
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
+  .mr-5 {
+    margin-right: calc(var(--spacing) * 5);
+  }
+  .mr-9 {
+    margin-right: calc(var(--spacing) * 9);
+  }
+  .mr-15 {
+    margin-right: calc(var(--spacing) * 15);
+  }
+  .mr-16 {
+    margin-right: calc(var(--spacing) * 16);
+  }
+  .mr-20 {
+    margin-right: calc(var(--spacing) * 20);
   }
   .mr-24 {
     margin-right: calc(var(--spacing) * 24);
+  }
+  .mr-25 {
+    margin-right: calc(var(--spacing) * 25);
+  }
+  .mr-28 {
+    margin-right: calc(var(--spacing) * 28);
+  }
+  .mr-70 {
+    margin-right: calc(var(--spacing) * 70);
+  }
+  .mr-\[10px\] {
+    margin-right: 10px;
   }
   .flex {
     display: flex;
@@ -255,26 +282,17 @@
   .h-7 {
     height: calc(var(--spacing) * 7);
   }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
-  .h-\[0\.0px\] {
-    height: 0.0px;
-  }
-  .h-\[0\.01px\] {
-    height: 0.01px;
-  }
   .h-\[0\.2px\] {
     height: 0.2px;
-  }
-  .h-\[0\.09px\] {
-    height: 0.09px;
-  }
-  .h-\[0\.px\] {
-    height: 0.px;
-  }
-  .h-\[1px\] {
-    height: 1px;
   }
   .w-1 {
     width: calc(var(--spacing) * 1);
@@ -285,29 +303,29 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
+  .w-13 {
+    width: calc(var(--spacing) * 13);
+  }
   .w-15 {
     width: calc(var(--spacing) * 15);
+  }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
   }
   .w-\[70\%\] {
     width: 70%;
   }
-  .w-\[80\%\] {
-    width: 80%;
-  }
-  .w-\[80\] {
-    width: 80;
-  }
   .w-\[90\%\] {
     width: 90%;
-  }
-  .w-\[full\] {
-    width: full;
   }
   .w-full {
     width: 100%;
@@ -333,6 +351,9 @@
   .items-center {
     align-items: center;
   }
+  .items-end {
+    align-items: flex-end;
+  }
   .justify-center {
     justify-content: center;
   }
@@ -345,8 +366,14 @@
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
+  }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
@@ -400,9 +427,6 @@
   .bg-gray-400 {
     background-color: var(--color-gray-400);
   }
-  .bg-white {
-    background-color: var(--color-white);
-  }
   .object-cover {
     object-fit: cover;
   }
@@ -421,6 +445,9 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
   .px-11 {
     padding-inline: calc(var(--spacing) * 11);
   }
@@ -435,6 +462,9 @@
   }
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
+  }
+  .text-center {
+    text-align: center;
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -462,9 +492,6 @@
   }
   .text-\[\#1d9bf0\] {
     color: #1d9bf0;
-  }
-  .text-blue-600 {
-    color: var(--color-blue-600);
   }
   .text-gray-200 {
     color: var(--color-gray-200);
@@ -509,6 +536,20 @@
       }
     }
   }
+  .hover\:bg-\[\#35a6f2\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #35a6f2;
+      }
+    }
+  }
+  .hover\:bg-\[1A1A1A\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: 1A1A1A;
+      }
+    }
+  }
   .hover\:bg-gray-800 {
     &:hover {
       @media (hover: hover) {
@@ -520,6 +561,20 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-900);
+      }
+    }
+  }
+  .hover\:text-\[\#35a6f2\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #35a6f2;
+      }
+    }
+  }
+  .hover\:text-\[\#61b5ed\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #61b5ed;
       }
     }
   }
