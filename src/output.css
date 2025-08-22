@@ -9,6 +9,7 @@
       "Courier New", monospace;
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
@@ -215,14 +216,8 @@
       max-width: 96rem;
     }
   }
-  .m-2 {
-    margin: calc(var(--spacing) * 2);
-  }
   .m-3 {
     margin: calc(var(--spacing) * 3);
-  }
-  .m-5 {
-    margin: calc(var(--spacing) * 5);
   }
   .m-auto {
     margin: auto;
@@ -232,6 +227,12 @@
   }
   .mx-auto {
     margin-inline: auto;
+  }
+  .my-2 {
+    margin-block: calc(var(--spacing) * 2);
+  }
+  .my-3 {
+    margin-block: calc(var(--spacing) * 3);
   }
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
@@ -257,8 +258,23 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
-  .h-12 {
-    height: calc(var(--spacing) * 12);
+  .h-\[0\.0px\] {
+    height: 0.0px;
+  }
+  .h-\[0\.01px\] {
+    height: 0.01px;
+  }
+  .h-\[0\.2px\] {
+    height: 0.2px;
+  }
+  .h-\[0\.09px\] {
+    height: 0.09px;
+  }
+  .h-\[0\.px\] {
+    height: 0.px;
+  }
+  .h-\[1px\] {
+    height: 1px;
   }
   .w-1 {
     width: calc(var(--spacing) * 1);
@@ -269,6 +285,9 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
@@ -277,6 +296,18 @@
   }
   .w-\[70\%\] {
     width: 70%;
+  }
+  .w-\[80\%\] {
+    width: 80%;
+  }
+  .w-\[80\] {
+    width: 80;
+  }
+  .w-\[90\%\] {
+    width: 90%;
+  }
+  .w-\[full\] {
+    width: full;
   }
   .w-full {
     width: 100%;
@@ -319,9 +350,6 @@
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
-  }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
   }
   .space-y-3 {
     :where(& > :not(:last-child)) {
@@ -368,6 +396,9 @@
   }
   .bg-black {
     background-color: var(--color-black);
+  }
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -429,8 +460,8 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
-  .text-black {
-    color: var(--color-black);
+  .text-\[\#1d9bf0\] {
+    color: #1d9bf0;
   }
   .text-blue-600 {
     color: var(--color-blue-600);
