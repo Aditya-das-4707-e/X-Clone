@@ -28,7 +28,7 @@ Screenshots
 
 Add screenshots to the `assets` or `public` folder and reference them here. Example:
 
-![Home view](./public/screenshots/home.png)
+![Home view](https://github.com/Aditya-das-4707-e/X-Clone/blob/main/home.png)
 
 Getting Started
 
