@@ -1,112 +1,75 @@
-# X.com (Clone)
+# X-Clone
 
-A lightweight, static front-end prototype of an X/Twitter-like layout, built with plain HTML and Tailwind CSS. The project demonstrates responsive layout patterns, a sidebar navigation, a main feed, and a right-hand widget column.
+A front-end clone of X (formerly Twitter) built with Tailwind CSS and deployed on Vercel. This repository contains the source for the user interface and static assets used in the project. The project is complete and the live site is available at the link below.
 
-This README explains the project structure, how to rebuild the included Tailwind CSS, common troubleshooting tips, and suggested improvements.
+Live Demo
 
----
+https://x-pb3kv5l0t-aditya-das-projects-a3948e45.vercel.app
 
-## Project snapshot
+Overview
 
-- Static single-page prototype: `index.html`
-- Tailwind entry: `src/input.css` (imports Tailwind)
-- Compiled CSS: `src/output.css` (committed for convenience)
-- Node deps: `package.json` (Tailwind CLI listed)
+This project reproduces the look and feel of X with a focus on modern responsive UI using Tailwind CSS. It includes layouts for timeline, navigation, profile, and common UI components styled to match the source.
 
-## Goals
+Key Features (implemented)
 
-- Practice responsive layout with Tailwind
-- Prototype a three-column social feed layout
-- Keep the project dependency-light and framework-free
+- Responsive layout across desktop and mobile
+- Tailwind CSS-powered utility-first styling
+- Reusable component structure for header, feed, sidebar, and cards
+- Static assets and icons optimized for web delivery
+- Deployed to Vercel (live link above)
 
-## Setup & development
+Built With
+
+- Tailwind CSS
+- HTML/CSS and JavaScript (frontend)
+- Deployed on Vercel
+
+Screenshots
+
+Add screenshots to the `assets` or `public` folder and reference them here. Example:
+
+![Home view](./public/screenshots/home.png)
+
+Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine.
 
 Prerequisites
-- Node.js + npm (optional if you only use the committed `src/output.css`)
-- Optional: Python (quick static server)
 
-Install (optional)
+- Node.js and npm (if the project uses a JS build system)
+- Git
 
-```bash
-npm install
-```
+Installation
 
-Build Tailwind CSS
+1. Clone the repository:
+   git clone https://github.com/Aditya-das-4707-e/X-Clone.git
+2. Enter the project directory:
+   cd X-Clone
+3. Install dependencies (if applicable):
+   npm install
 
-```bash
-# build once
-npx tailwindcss -i ./src/input.css -o ./src/output.css
+Running Locally
 
-# dev + watch
-npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+- Start the development server (if using a framework like Next.js or Vite):
+  npm run dev
 
-# production (minified)
-npx tailwindcss -i ./src/input.css -o ./src/output.css --minify
-```
+Build
 
-Serve locally
+- Build for production (if applicable):
+  npm run build
 
-```bash
-# Python 3 static server
-python3 -m http.server 8000
+Deployment
 
-# open http://localhost:8000
-```
+The project is deployed on Vercel. You can deploy it yourself by connecting the repository to Vercel or by running the Vercel CLI.
 
-Suggested `package.json` scripts (optional)
+Contributing
 
-```json
-"scripts": {
-  "build:css": "npx tailwindcss -i ./src/input.css -o ./src/output.css",
-  "watch:css": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-  "build:css:prod": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify"
-}
-```
+Contributions are welcome. If you open issues or pull requests, please include clear descriptions and small, focused changes.
 
-## File map (important files)
+License
 
-- `index.html` — Main UI markup. Contains the 3-column layout and component stubs.
-- `src/input.css` — Tailwind entry (only contains the Tailwind import).
-- `src/output.css` — Compiled Tailwind CSS (ready-to-use; large file committed to avoid a required build step).
-- `package.json` — Lists `tailwindcss` and `@tailwindcss/cli` as dependencies.
+Specify a license file in the repository if you want to make the project open source. If no license is present, default repository settings apply.
 
-If you edit markup and need new utilities (e.g., arbitrary values), rebuild `src/output.css` with the CLI.
+Contact
 
-## Common troubleshooting
-
-- Divider not visible: avoid `h-[1px]` unless arbitrary values enabled; prefer `h-px` or `<hr class="border-t border-gray-700" />`.
-- Hover border shifts neighbors: use `border border-transparent` by default and only change color on hover.
-- Icons/text alignment at breakpoints: ensure container alignment (`items-center`) and use responsive utilities (`md:w-fit`, `md:justify-center`, `md:px-0`).
-
-## Accessibility recommendations
-
-- Use semantic markup: wrap navigation with `<nav>` and use anchor tags (`<a>`) inside `<li>` elements.
-- Add `aria-label` on navigation and `alt` on images.
-- Ensure color contrast meets WCAG AA for interactive states.
-
-## Possible improvements / next steps
-
-1. Semantic navigation & keyboard support
-   - Convert `<li>` items into `<a>` links; add `role`/`aria` attributes and keyboard focus styles.
-2. Build automation
-   - Add `npm` scripts (example above) and optionally a small `dev` script that runs `watch:css` plus a static server.
-3. Component cleanup
-   - Extract repeated utilities to a small CSS file or use Tailwind's `@apply` to create reusable classes.
-4. Tests & CI
-   - Add a linting step (HTML/CSS) and a minimal CI workflow that verifies the site builds.
-
-## How I validated the project
-
-- Inspected `index.html` to confirm layout and responsive patterns.
-- Verified `package.json` lists Tailwind dependencies.
-- Reviewed `src/output.css` to ensure the compiled utilities exist; this means you can open `index.html` without rebuilding.
-
----
-
-If you want, I can:
-
-- Add the recommended `npm` scripts to `package.json`.
-- Convert the sidebar to semantic `<nav>` + `<a>` with improved accessibility.
-- Make the nav fully responsive (collapse to icons-only on small screens).
-
-Tell me which follow-ups you'd like and I'll implement them.
+Owner: Aditya-das-4707-e
