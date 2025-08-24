@@ -16,51 +16,80 @@
             <div class="first w-16 sm:w-20 md:w-64 lg:w-80 xl:w-72 flex-shrink-0">
                 <div class="sticky top-0 h-screen overflow-y-auto">
                     <div class="flex flex-col h-full py-4">
-                        <div class="logo invert mb-8 px-3 md:px-6">
-                            <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 h-8 mx-auto md:mx-0">
-                                <g>
+                        <div class="flex justify-center md:justify-start items-center mb-2 px-2 md:px-4">
+                            <div class="p-3 rounded-full hover:bg-gray-900 transition-colors">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" class="w-7 h-7 fill-current">
                                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
-                                </g>
-                            </svg>
+                                </svg>
+                            </div>
                         </div>
                         <div class="sidebar flex flex-col flex-1">
-                            <ul class="flex flex-col text-lg md:text-xl space-y-1 md:space-y-2 px-2 md:px-4 font-bold">
-                                <li class="flex justify-center md:justify-start items-center gap-2 md:gap-3 w-fit md:w-full border border-transparent rounded-full hover:bg-gray-900 hover:border-gray-700 hover:cursor-pointer transition-colors px-2 md:px-4 py-2 md:py-3">
-                                    <span class="material-symbols-outlined text-3xl md:text-2xl flex-shrink-0">Home</span><span class="hidden md:block">Home</span>
-                                </li>
-                                <li class="flex justify-center md:justify-start items-center gap-2 md:gap-3 w-fit md:w-full border border-transparent rounded-full hover:bg-gray-900 hover:border-gray-700 hover:cursor-pointer transition-colors px-2 md:px-4 py-2 md:py-3">
-                                    <span class="material-symbols-outlined text-3xl md:text-2xl flex-shrink-0">search</span><span class="hidden md:block">Explore</span>
-                                </li>
-                                <li class="flex justify-center md:justify-start items-center gap-2 md:gap-3 w-fit md:w-full border border-transparent rounded-full hover:bg-gray-900 hover:border-gray-700 hover:cursor-pointer transition-colors px-2 md:px-4 py-2 md:py-3">
-                                    <span class="material-symbols-outlined text-3xl md:text-2xl flex-shrink-0">Notifications</span><span class="hidden md:block">Notifications</span>
-                                </li>
-                                <li class="flex justify-center md:justify-start items-center gap-2 md:gap-3 w-fit md:w-full border border-transparent rounded-full hover:bg-gray-900 hover:border-gray-700 hover:cursor-pointer transition-colors px-2 md:px-4 py-2 md:py-3">
-                                    <span class="material-symbols-outlined text-3xl md:text-2xl flex-shrink-0">Massage</span><span class="hidden md:block">Grok</span>
-                                </li>
-                                <li class="flex justify-center md:justify-start items-center gap-2 md:gap-3 w-fit md:w-full border border-transparent rounded-full hover:bg-gray-900 hover:border-gray-700 hover:cursor-pointer transition-colors px-2 md:px-4 py-2 md:py-3">
-                                    <span class="material-symbols-outlined text-3xl md:text-2xl flex-shrink-0">lists</span><span class="hidden md:block">Lists</span>
-                                </li>
-                                <li class="flex justify-center md:justify-start items-center gap-2 md:gap-3 w-fit md:w-full border border-transparent rounded-full hover:bg-gray-900 hover:border-gray-700 hover:cursor-pointer transition-colors px-2 md:px-4 py-2 md:py-3">
-                                    <span class="material-symbols-outlined text-3xl md:text-2xl flex-shrink-0">bookmarks</span><span class="hidden md:block">Bookmarks</span>
-                                </li>
-                                <li class="flex justify-center md:justify-start items-center gap-2 md:gap-3 w-fit md:w-full border border-transparent rounded-full hover:bg-gray-900 hover:border-gray-700 hover:cursor-pointer transition-colors px-2 md:px-4 py-2 md:py-3">
-                                    <span class="material-symbols-outlined text-3xl md:text-2xl flex-shrink-0">Group</span><span class="hidden md:block">Communities</span>
-                                </li>
-                                <li class="flex justify-center md:justify-start items-center gap-2 md:gap-3 w-fit md:w-full border border-transparent rounded-full hover:bg-gray-900 hover:border-gray-700 hover:cursor-pointer transition-colors px-2 md:px-4 py-2 md:py-3">
-                                    <span class="material-symbols-outlined text-3xl md:text-2xl flex-shrink-0">box</span><span class="hidden md:block">Premium</span>
-                                </li>
-                                <li class="flex justify-center md:justify-start items-center gap-2 md:gap-3 w-fit md:w-full border border-transparent rounded-full hover:bg-gray-900 hover:border-gray-700 hover:cursor-pointer transition-colors px-2 md:px-4 py-2 md:py-3">
-                                    <span class="material-symbols-outlined text-3xl md:text-2xl flex-shrink-0">person</span><span class="hidden md:block">Profile</span>
-                                </li>
-                                <li class="flex justify-center md:justify-start items-center gap-2 md:gap-3 w-fit md:w-full border border-transparent rounded-full hover:bg-gray-900 hover:border-gray-700 hover:cursor-pointer transition-colors px-2 md:px-4 py-2 md:py-3">
-                                    <span class="material-symbols-outlined text-3xl md:text-2xl flex-shrink-0">pending</span><span class="hidden md:block">More</span>
-                                </li>
-                            </ul>
-                            <div class="mt-auto p-2 md:p-3">
-                                <button class="bg-[#1d9bf0] w-12 h-12 md:w-auto md:h-auto md:px-8 text-lg md:text-xl rounded-full text-white cursor-pointer hover:bg-[#35a6f2] flex items-center justify-center">
-                                    <span class="md:hidden material-symbols-outlined">add</span>
+                            <nav class="flex flex-col space-y-1 md:space-y-0 px-2 md:px-4">
+                                <a href="#" class="flex justify-center md:justify-start items-center gap-4 w-fit md:w-full rounded-full hover:bg-gray-900 transition-colors px-2 md:px-4 py-3 text-xl">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    <span class="hidden md:block font-normal">Home</span>
+                                </a>
+                                <a href="#" class="flex justify-center md:justify-start items-center gap-4 w-fit md:w-full rounded-full hover:bg-gray-900 transition-colors px-2 md:px-4 py-3 text-xl">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"/></svg>
+                                    <span class="hidden md:block font-normal">Explore</span>
+                                </a>
+                                <a href="#" class="flex justify-center md:justify-start items-center gap-4 w-fit md:w-full rounded-full hover:bg-gray-900 transition-colors px-2 md:px-4 py-3 text-xl relative">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.234l-1.141-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.013 5.295L18.864 16H5.134z"/></svg>
+                                    <span class="hidden md:block font-normal">Notifications</span>
+                                    <div class="absolute top-2 left-4 w-2 h-2 bg-[#1d9bf0] rounded-full"></div>
+                                </a>
+                                <a href="#" class="flex justify-center md:justify-start items-center gap-4 w-fit md:w-full rounded-full hover:bg-gray-900 transition-colors px-2 md:px-4 py-3 text-xl">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5v13c0 1.381-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.119-2.5-2.5v-13zm2.5-.5c-.276 0-.5.224-.5.5v2.764l8 3.638 8-3.636V5.5c0-.276-.224-.5-.5-.5h-15zm15.5 5.463l-8 3.636-8-3.638V18.5c0 .276.224.5.5.5h15c.276 0 .5-.224.5-.5v-8.037z"/></svg>
+                                    <span class="hidden md:block font-normal">Messages</span>
+                                </a>
+                                <a href="#" class="flex justify-center md:justify-start items-center gap-4 w-fit md:w-full rounded-full hover:bg-gray-900 transition-colors px-2 md:px-4 py-3 text-xl">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                    <span class="hidden md:block font-normal">Grok</span>
+                                </a>
+                                <a href="#" class="flex justify-center md:justify-start items-center gap-4 w-fit md:w-full rounded-full hover:bg-gray-900 transition-colors px-2 md:px-4 py-3 text-xl">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672C11.908 11.935 13.493 12 15 12c.677 0 1.361-.063 2.018-.188l.257 1.025C16.584 12.937 15.677 13 15 13c-1.298 0-2.645-.073-4.312-.336 1.312.749 2.17 2.049 2.17 3.586 0 2.405-1.312 4.533-3.085 5.75zm.943-15.792c-2.155.199-4.149 1.26-5.58 2.911-.749.867-1.317 1.851-1.689 2.906l-.744.018c.217-1.252.745-2.442 1.567-3.518C2.875 6.842 4.322 6.086 6.637 6.18l.777-.972z"/></svg>
+                                    <span class="hidden md:block font-normal">Bookmarks</span>
+                                </a>
+                                <a href="#" class="flex justify-center md:justify-start items-center gap-4 w-fit md:w-full rounded-full hover:bg-gray-900 transition-colors px-2 md:px-4 py-3 text-xl">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672C11.908 11.935 13.493 12 15 12c1.639 0 3.185-.149 4.791-.364l.619 1.769C18.767 13.651 16.725 14 15 14c-1.298 0-2.645-.073-4.312-.336 1.312.749 2.17 2.049 2.17 3.586 0 2.405-1.312 4.533-3.085 5.75zM19.5 3A2.5 2.5 0 0 1 22 5.5c0 1.076-.327 2.117-.939 2.999L16 18l-5.061-9.501C11.327 7.617 11 6.576 11 5.5A2.5 2.5 0 0 1 13.5 3h6z"/></svg>
+                                    <span class="hidden md:block font-normal">Communities</span>
+                                </a>
+                                <a href="#" class="flex justify-center md:justify-start items-center gap-4 w-fit md:w-full rounded-full hover:bg-gray-900 transition-colors px-2 md:px-4 py-3 text-xl">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                    <span class="hidden md:block font-normal">Premium</span>
+                                </a>
+                                <a href="#" class="flex justify-center md:justify-start items-center gap-4 w-fit md:w-full rounded-full hover:bg-gray-900 transition-colors px-2 md:px-4 py-3 text-xl">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M7.323 2h11.443l-3.206 3.206c-1.124-.536-2.414-.854-3.781-.854-4.971 0-9 4.029-9 9s4.029 9 9 9c1.366 0 2.657-.318 3.781-.854L18.766 24H7.323c-1.06 0-1.851-.946-1.644-1.973L7.323 2z"/></svg>
+                                    <span class="hidden md:block font-normal">Verified Orgs</span>
+                                </a>
+                                <a href="#" class="flex justify-center md:justify-start items-center gap-4 w-fit md:w-full rounded-full hover:bg-gray-900 transition-colors px-2 md:px-4 py-3 text-xl">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 11.816c1.355 0 2.872-.15 3.84-1.256.814-.93 1.078-2.368.806-4.392-.38-2.825-2.117-4.512-4.646-4.512S7.734 3.343 7.354 6.168c-.272 2.024-.008 3.46.806 4.392.968 1.107 2.485 1.256 3.84 1.256zM8.84 6.368c.162-1.2.787-3.212 3.16-3.212s2.998 2.013 3.16 3.212c.207 1.55.057 2.627-.45 3.205-.455.52-1.266.743-2.71.743s-2.255-.223-2.71-.743c-.507-.578-.657-1.656-.45-3.205zm11.44 12.868c-.877-3.526-4.282-5.99-8.28-5.99s-7.403 2.464-8.28 5.99c-.172.692-.028 1.4.395 1.94.408.52 1.04.82 1.733.82h12.304c.693 0 1.325-.3 1.733-.82.424-.54.567-1.248.395-1.94zm-1.576 1.016c-.126.16-.316.246-.552.246H5.848c-.235 0-.426-.085-.552-.246-.137-.174-.18-.412-.12-.654.71-2.855 3.517-4.85 6.824-4.85s6.114 1.994 6.824 4.85c.06.242.017.48-.12.654z"/></svg>
+                                    <span class="hidden md:block font-normal">Profile</span>
+                                </a>
+                                <a href="#" class="flex justify-center md:justify-start items-center gap-4 w-fit md:w-full rounded-full hover:bg-gray-900 transition-colors px-2 md:px-4 py-3 text-xl">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+                                    <span class="hidden md:block font-normal">More</span>
+                                </a>
+                            </nav>
+                            
+                            <div class="mt-6 px-2 md:px-4">
+                                <button class="bg-gray-100 w-12 h-12 md:w-full md:h-auto md:py-3 text-lg font-bold rounded-full text-black cursor-pointer hover:bg-gray-300 flex items-center justify-center transition-colors">
+                                    <span class="md:hidden">+</span>
                                     <span class="hidden md:block">Post</span>
                                 </button>
+                            </div>
+                            
+                            <div class="mt-auto px-2 md:px-4 pb-4">
+                                <div class="flex items-center gap-3 p-3 rounded-full hover:bg-gray-900 transition-colors cursor-pointer">
+                                    <img src="https://pbs.twimg.com/profile_images/1940783537872867328/jPBzd5bK_normal.jpg" alt="Profile" class="w-10 h-10 rounded-full flex-shrink-0">
+                                    <div class="hidden md:flex flex-col flex-1 min-w-0">
+                                        <span class="font-bold text-sm truncate">Aditya Das</span>
+                                        <span class="text-gray-500 text-sm truncate">@AdityaCodesLabs</span>
+                                    </div>
+                                    <svg class="hidden md:block w-4 h-4 text-gray-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -80,7 +109,7 @@
             <div class="whatishapp flex p-3 md:p-4 border-b border-gray-700">
                 <div class="img mr-3">
                     <img src="https://pbs.twimg.com/profile_images/1940783537872867328/jPBzd5bK_normal.jpg" alt=""
-                        class="w-10 h-10 rounded-full object-cover">
+                        class="w-10 h-10 rounded-full object-cover cursor-pointer">
                 </div>
                 <div class="flex-1">
                     <input class="bg-black text-white w-full h-auto py-3 outline-none text-lg md:text-xl placeholder-gray-500" type="text"
@@ -116,7 +145,7 @@
                                 location_on
                             </span>
                         </div>
-                        <button class="bg-[#1d9bf0] px-6 py-1.5 text-sm font-bold rounded-full text-white cursor-pointer hover:bg-[#35a6f2] opacity-50">
+                        <button class="bg-gray-300 px-6 py-1.5 text-sm font-bold rounded-full text-black cursor-pointer hover:bg-gray-100 opacity-50">
                             Post
                         </button>
                     </div>
